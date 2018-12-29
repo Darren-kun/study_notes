@@ -25,10 +25,13 @@ $git log #查看提交日志 近到远,能看到 commit 时的 message
 	HEAD^^ 上上一版
 	HEAD~100 上100版）
 
+查看每一次命令（包括commit id）
+	$git reflog
 
-
-
-
+撤销修改：(撤销工作区）
+	$git checkout --<file>
+撤销修改：(暂缓区）
+	$git reset HEAD <file>
 
 
 使用github 远程仓库（在码云上的操作相同）
