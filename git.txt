@@ -1,0 +1,48 @@
+﻿
+win 安装 git
+打开 git Bash
+
+创建仓库：
+1、创建一个文件夹
+2、进入文件夹目录   
+输入初始化仓库命令：
+	$ git init
+	
+#仓库里面的任意一个文件后
+将文件提交到git仓库：
+
+$git add <file>    #要先添加 ，<file> 是需要提交的文件名，带上文件后缀
+$git commit -m <message>   #再提交  <message> 是 该文件的说明信息
+
+$git status  #查看仓库状态，查看有没有文件做了修改，可以提交
+
+$git log #查看提交日志 近到远,能看到 commit 时的 message
+或 $git log --pretty=oneline 
+
+退回上一个版本：
+
+
+
+
+
+
+
+使用github 远程仓库（在码云上的操作相同）
+
+在github 创建仓库 
+
+在git Bash
+输入命令创建 ssh 密钥
+$ssh-keygen -t rsa -C "邮箱"
+一直回车
+在github添加生成的公钥.push文件内容
+
+
+远程仓库clone 仓库到本地：
+$git clone 仓库地址（在github上复制）
+
+
+
+
+
+
