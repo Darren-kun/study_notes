@@ -19,7 +19,11 @@ $git status  #查看仓库状态，查看有没有文件做了修改，可以提
 $git log #查看提交日志 近到远,能看到 commit 时的 message
 或 $git log --pretty=oneline 
 
-退回上一个版本：
+退回上一个版本：（已经commit过的版本）
+	$git reset --hard HEAD^
+	(HEAD^ 上一版 
+	HEAD^^ 上上一版
+	HEAD~100 上100版）
 
 
 
