@@ -1,8 +1,8 @@
 ﻿
-win 安装 git
+-----win 安装 git------
 打开 git Bash
 
-创建仓库：
+-----创建仓库：--------
 1、创建一个文件夹
 2、进入文件夹目录   
 输入初始化仓库命令：
@@ -30,9 +30,11 @@ $git log #查看提交日志 近到远,能看到 commit 时的 message
 
 撤销修改：(撤销工作区）
 	$git checkout --<file>
-撤销修改：(暂缓区）
+撤销修改：(撤销add暂缓区,回到工作区，在撤销修改）
 	$git reset HEAD <file>
 
+删除：
+	$git rm <file>
 
 使用github 远程仓库（在码云上的操作相同）
 
@@ -44,9 +46,72 @@ $ssh-keygen -t rsa -C "邮箱"
 一直回车
 在github添加生成的公钥.push文件内容
 
+-----------添加远程仓库-----------------
+$git remote add origin 仓库地址
 
-远程仓库clone 仓库到本地：
+-----------删除远程仓库-----------------
+$git remote rm origin
+
+---------- 查看远程仓库信息 ------------
+$git remote -v
+
+--------- 将内容上存到远程仓库---------
+$git push -u origin master
+(*注意这里需要先提交add --->commit，如果仓库没有内容，会报错 error: src refspec master does not match any.）
+
+-----远程仓库clone 仓库到本地----------
 $git clone 仓库地址（在github上复制）
+
+----- 创建并切换分支--------------------
+$ git checkout -b <name>
+
+------- 切换分支 -------------------------
+$ git checkout <name>
+
+----- 创建分支 ---------------------------
+$ git branch <name>
+
+----- 删除分支 ---------------------------
+$ git branch -d <name>
+
+----- 合并分支 ---------------------------
+$ git merge <name>
+
+------ 查看当前分支 ---------------------
+$ git branch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
